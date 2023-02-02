@@ -398,16 +398,12 @@ input {
   padding-left: 0;
 
 
-/*********************************PAGINA CONTACTO*********************************/
-
-.section1Contact {
-  
+.mainContent-Contact {
+  margin-top: 8rem;
 }
 
-
 .section1Contact {
-  margin-top: 10rem;
-  padding-top: 4rem;
+  margin: 2rem;
   text-align: center;
 }
 
@@ -497,21 +493,13 @@ textarea {
   background-color: white;
 }
 
-input[type="checkbox"] {
-  width: 15px;
-  height: 15px;
-  border-width: 1px;
-  margin-right: 20px;
-  border-color: #000000;
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: black!important;
 }
 
-.checkboxText {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  text-decoration: none;
-  letter-spacing: normal;
+}
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+  background-color: black; 
 }
 
 .formButtonsArea {
