@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ALA Diseño de Interiores</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <link
       rel="stylesheet"
@@ -16,36 +22,70 @@
   </head>
 
   <body>
-    <div class="wrapHeader">
+    <div class="container.fluid wrapHeader">
       <header>
-        <div class="navContainer">
-          <div class="navContent">
-            <a href="./Index.html">
+        <nav class="navbar fixed-top navbar-expand-lg navContainer">
+          <div class="container navContent">
+            <a class="navbar-brand" href="./Index.html">
               <img
-                class="hero_logo"
                 src="./assets/images/svg/Logo.svg"
                 alt="Logo ALA Diseño de Interiores"
               />
             </a>
-            <nav class="hero_nav">
-              <ul class="hero_nav_links">
-                <li><a href="./pages/servicios.html">SERVICIOS</a></li>
-                <li><a href="./pages/proyectos.html">PROYECTOS</a></li>
-                <li><a href="./pages/about.html">SOBRE MI</a></li>
-              </ul>
-            </nav>
-            <a class="hero_cta" href="./pages/contacto.html"
-              ><button>CONTACTO</button></a
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav
+              class="collapse navbar-collapse hero_nav"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav center hero_nav_links">
+                <li>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./pages/servicios.html"
+                    >SERVICIOS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./pages/proyectos.html"
+                    >PROYECTOS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./pages/about.html"
+                    >SOBRE MI</a
+                  >
+                </li>
+              </ul>
+              <a class="hero_cta" href="./pages/contacto.html"
+                ><button>CONTACTO</button></a
+              >
+            </nav>
           </div>
-        </div>
+        </nav>
       </header>
     </div>
     <main>
-      <article class="mainContent">
-        <section class="section1">
+      <div class="container.fluid mainContent">
+        <div class="row section1 text-center">
           <h1>Convertí tu hogar en <i>tu lugar favorito</i> en el mundo.</h1>
-          <p id="parSection1">
+          <p id="parSection1" class="text-center">
             Crear un espacio que te inspire, refleje tu personalidad y se adapte
             a tu estilo de vida es posible. Con nuestra ayuda transformá tu
             espacio en el hogar que siempre soñaste.
@@ -53,17 +93,16 @@
           <a class="ctaSection1" href="./pages/servicios.html">
             <button class="ctaSection1">¡QUIERO SABER MÁS!</button>
           </a>
-        </section>
-        <section class="section2">
-          <div>
+        </div>
+        <div class="row section2">
+          <div class="col-xl-6 section2_image">
             <img
-              class="section2_image"
               src="./assets/images/jpeg/imagenpinterestprueba.jpg"
               alt="Tablero de pinterest"
             />
           </div>
-          <div class="contSection2">
-            <h2 class="h2Section2">
+          <div class="col-xl-6 contSection2">
+            <h2 class="text-center h2Section2">
               ¿Tenés cientos de pines guardados con ideas para decorar tu casa
               pero no sabes por dónde empezar?
             </h2>
@@ -85,16 +124,9 @@
               </ul>
             </nav>
           </div>
-          <div class="imgSection2"></div>
-        </section>
-        <section class="section3">
-          <div>
-            <img
-              class="section3_image"
-              src="./assets/images/jpeg/section3 image.jpg"
-            />
-          </div>
-          <div class="contSection3">
+        </div>
+        <div class="row section3">
+          <div class="col-xl-6 contSection3">
             <h2 class="h2Section3">
               ¿Y si te dijera que podés tener la casa que siempre soñaste sin
               gastar una fortuna?
@@ -104,30 +136,33 @@
               que te inviten a quedarte en casa y disfrutar de tu espacio.
             </p>
           </div>
-        </section>
-        <section class="section4">
-          <div class="contSection4">
+          <div class="col-xl-6 section3_image">
+            <img src="./assets/images/jpeg/section3 image.jpg" />
+          </div>
+        </div>
+        <div class="row section4">
+          <div class="contSection4 col-xl-6">
             <h2 class="h2Section4">¡Con ALA es posible!</h2>
-            <h3 class="h3Section4">
+            <p class="h3Section4">
               Te ayudamos a crear espacios únicos que tengan un perfecto
               equilibrio entre la estética y la funcionalidad, adaptado a tus
               gustos, estilo de vida y necesidades.
-            </h3>
+            </p>
             <a href="./pages/about.html" class="aSection4"
               >Conocé mi historia</a
             >
           </div>
-        </section>
-        <section class="section5">
-          <div class="contSection5">
+        </div>
+        <div class="row section5">
+          <div class="col-xl-6 contSection5">
             <h2 class="h2Section5">
               ¿Estás lista para empezar a transformar tu casa en el lugar que
               siempre soñaste?
             </h2>
-            <h3 class="h3Section5">
+            <p class="h3Section5 lead">
               Llegó el momento de dejar de soñar y empezar a crear el hogar que
               siempre quisiste.
-            </h3>
+            </p>
             <p class="parSection5">
               Va a ser un placer acompañarte en esta aventura. Descubrí las
               propuestas que armé especialmente para que se adapten a tus
@@ -137,26 +172,21 @@
               <button>¡ESTOY LISTA!</button>
             </a>
           </div>
-          <div>
-            <img
-              class="section5_image"
-              src="./assets/images/jpeg/Section5.png"
-            />
+          <div class="col-xl-6 section5_image">
+            <img src="./assets/images/jpeg/Section5.png" />
           </div>
-        </section>
-      </article>
+        </div>
+      </div>
     </main>
 
-    <!--codigo de footer-->
-    <footer class="footer">
-      <section class="footerContainer">
-        <hr style="width: 1085px; margin: auto" class="hr" />
-        <section class="footerContent">
-          <section class="column1">
+    <footer class="bg-dark text-white">
+      <div class="container p-4 footerContainer">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <div class="logo">
               <picture
                 ><img
-                  class="logo"
+                  class="logo-Footer"
                   src="./assets/images/svg/Logoblanco.svg"
                   alt="Logo ALA Diseño de Interiores"
               /></picture>
@@ -249,84 +279,95 @@
                 </a>
               </div>
             </div>
-          </section>
-          <section class="column2">
-            <div class=".col2">
-              <ul class="col2Links">
-                <li color="white">
-                  <a class="col2LinksLi a" href="./Index.html">Home</a>
-                </li>
-                <li class="col2LinksLi">
-                  <a class="col2LinksLi a" href="./pages/servicios.html"
-                    >Servicios</a
-                  >
-                </li>
-                <li class="col2LinksLi">
-                  <a class="col2LinksLi a" href="./pages/proyectos.html"
-                    >Proyectos</a
-                  >
-                </li>
-                <li class="col2LinksLi">
-                  <a class="col2LinksLi a" href="./pages/about.html"
-                    >Sobre mi</a
-                  >
-                </li>
-                <li class="col2LinksLi">
-                  <a class="col2LinksLi a" href="./pages/contacto.html"
-                    >Contacto</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section class="column3">
-            <div class="col3">
-              <ul class="col3Links">
-                <li>
-                  <a class="col3LinksLi a" href="#">Proceso de trabajo</a>
-                </li>
-                <li class="col3LinksLi">
-                  <a class="col3LinksLi a" href="#">FAQ</a>
-                </li>
-                <li class="col3LinksLi">
-                  <a class="col3LinksLi a" href="#">Blog</a>
-                </li>
-                <li class="col3LinksLi">
-                  <a class="col3LinksLi a" href="#">Politica de privacidad</a>
-                </li>
-                <li class="col3LinksLi">
-                  <a class="col3LinksLi a" href="#">Terminos y condiciones</a>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section class="column4">
-            <div class="newsletterFooter">
-              Suscribite a nuestro Newsletter y <br />
-              enterate de todas las novedades:
-            </div>
-            <form action="formFooter">
-              <div>
-                <input
-                  class="inputFooter"
-                  class="field"
-                  type="text"
-                  id="mail"
-                  name="mail"
-                  placeholder="ejemplo@gmail.com"
-                />
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="column2">
+              <div class=".col2">
+                <ul class="col2Links">
+                  <li color="white">
+                    <a class="col2LinksLi a" href="./../Index.html">Home</a>
+                  </li>
+                  <li class="col2LinksLi">
+                    <a class="col2LinksLi a" href="./servicios.html"
+                      >Servicios</a
+                    >
+                  </li>
+                  <li class="col2LinksLi">
+                    <a class="col2LinksLi a" href="./proyectos.html"
+                      >Proyectos</a
+                    >
+                  </li>
+                  <li class="col2LinksLi">
+                    <a class="col2LinksLi a" href="./about.html">Sobre mi</a>
+                  </li>
+                  <li class="col2LinksLi">
+                    <a class="col2LinksLi a" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
               </div>
-              <div>
-                <input
-                  type="submit"
-                  value="¡QUIERO SUSCRIBIRME!"
-                  id="inputSubmit"
-                />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="column3">
+              <div class="col3">
+                <ul class="col3Links">
+                  <li>
+                    <a class="col3LinksLi a" href="#">Proceso de trabajo</a>
+                  </li>
+                  <li class="col3LinksLi">
+                    <a class="col3LinksLi a" href="#">FAQ</a>
+                  </li>
+                  <li class="col3LinksLi">
+                    <a class="col3LinksLi a" href="#">Blog</a>
+                  </li>
+                  <li class="col3LinksLi">
+                    <a class="col3LinksLi a" href="#">Politica de privacidad</a>
+                  </li>
+                  <li class="col3LinksLi">
+                    <a class="col3LinksLi a" href="#">Terminos y condiciones</a>
+                  </li>
+                </ul>
               </div>
-            </form>
-          </section>
-        </section>
-      </section>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="column4">
+              <div class="newsletterFooter">
+                Suscribite a nuestro Newsletter y <br />
+                enterate de todas las novedades:
+              </div>
+              <form action="formFooter">
+                <div>
+                  <input
+                    class="inputFooter bg-dark"
+                    class="field"
+                    type="text"
+                    id="mail"
+                    name="mail"
+                    placeholder="ejemplo@gmail.com"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="submit"
+                    value="¡QUIERO SUSCRIBIRME!"
+                    id="inputSubmit"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-3 text-white">
+          © 2020 Copyright:
+          <a
+            class="text-white"
+            href="https://www.notion.so/uxmaca-portolio/Portfolio-4d5252a0fff34d5d860a48e0411dacc0"
+            >ux.maca</a
+          >
+        </div>
+      </div>
+      <!-- Copyright -->
     </footer>
   </body>
 </html>
