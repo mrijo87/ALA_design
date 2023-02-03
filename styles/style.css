@@ -398,12 +398,16 @@ input {
   padding-left: 0;
 
 
+/*****************************PAGINA CONTACTO***********************************/
+
 .mainContent-Contact {
-  margin-top: 8rem;
+  margin: 16rem;
 }
 
-.section1Contact {
-  margin: 2rem;
+.mainContent-Contact {
+  margin: 16rem;
+}
+
   text-align: center;
 }
 
@@ -414,125 +418,34 @@ input {
   text-align: center;
 }
 
-.formContact {
-  margin-top: 60px;
-  width: 35%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.itemsFormContact {
-  margin-top: 40px;
-}
-
-.formInput {
-  margin-top: 10px;
-  color: white;
-  padding-left: 10px;
-  border-color: #1e1e1e;
-  background-color: white;
-  border-radius: 4px;
+.marquee {
+  height: 25px;
   width: 100%;
-  border-width: 1px;
-  margin-bottom: 20px;
+
+  overflow: hidden;
+  position: relative;
 }
 
-::placeholder {
-  color: dimgray;
-}
-
-label {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 1.25px;
-  text-decoration: none;
-}
-
-select {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  text-decoration: none;
-  height: 40px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-color: #1e1e1e;
-  border-radius: 4px;
-  border-width: 1px;
-  background-color: white;
-  width: 100%;
-}
-
-option {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  text-decoration: none;
-}
-
-.mesajeArea {
+.marquee div {
   display: block;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  width: 200%;
+  height: 30px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 15s linear infinite;
 }
 
-textarea {
-  margin-top: 10px;
+.marquee span {
+  float: left;
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-color: #1e1e1e;
-  border-radius: 4px;
-  border-width: 1px;
-  background-color: white;
 }
 
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: black!important;
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
 }
-
-}
-.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
-  background-color: black; 
-}
-
-.formButtonsArea {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-input[type="submit"] {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 1.25px;
-  color: white;
-  border-radius: 25px;
-  border-style: hidden;
-  background-color: black;
-}
-
-input[type="reset"] {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 1.25px;
-  color: white;
-  border-radius: 25px;
-  background-color: black;
-  margin-top: 30px;
-  margin-left: 10px;
-  border-style: hidden;
-}
-
 
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
