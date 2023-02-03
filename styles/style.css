@@ -5,8 +5,16 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding:0
-  
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+img, picture {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+
 }
 
 h1,
@@ -40,6 +48,9 @@ a {
 
 body {
   background-color: white;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /*HOME*/
@@ -176,9 +187,11 @@ button:hover {
 }
 
 .section4 {
+  margin-top: 4rem;
   background-image: url(../assets/images/jpeg/section\ 4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 100%;
   height: 70vh;
   overflow: hidden;
 }
