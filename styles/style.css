@@ -452,10 +452,6 @@ input {
   margin: 16rem;
 }
 
-.mainContent-Contact {
-  margin: 16rem;
-}
-
 .parSection1Contact {
   margin: auto;
   margin-top: 40px;
@@ -515,20 +511,21 @@ input {
 
 /* Responsive*/
 
-@media screen and (max-width: 767px) {
-  .navbar-brand {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 767px) and (max-width: 1200px) {
   .mainContent {
     padding: 2rem;
+  }
+  .home-link {
+    display: none;
   }
 }
 
 @media (min-width: 1200px) {
   .contSection2 {
     padding: 8rem 4rem 6rem 4rem;
+  }
+
+  .home-link {
+    display: none;
   }
 }
