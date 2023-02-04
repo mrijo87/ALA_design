@@ -126,6 +126,7 @@ body {
 .navbar-collapse {
   align-items: center;
   justify-content: space-between;
+  flex-grow: 0;
 }
 
 /*Cuando la navbar este colapsada*/
