@@ -160,16 +160,18 @@
     </main>
     <!--Aca termina el main y empieza el footer-->
     <!--codigo de footer-->
-    <footer class="footer">
-      <section class="footerContainer">
-        <hr style="width: 1085px; margin: auto" class="hr" />
-        <section class="footerContent">
-          <section class="column1">
-            <div class="logo">
+    <footer class="footer-custom">
+      <div class="container p-4 footer-Container">
+        <div class="row">
+          <div class="line-footer"></div>
+          <div
+            class="column-footer d-flex flex-column justify-content-center col-lg-3 col-md-6 mb-4 mb-md-0"
+          >
+            <div class="logo-footer-Container">
               <picture
                 ><img
-                  class="logo"
-                  src="./../assets/images/svg/Logoblanco.svg"
+                  class="logo-Footer"
+                  src="../assets/images/svg/Logoblanco.svg"
                   alt="Logo ALA Diseño de Interiores"
               /></picture>
             </div>
@@ -261,76 +263,96 @@
                 </a>
               </div>
             </div>
-          </section>
-          <section class="column2">
-            <div class=".col2">
-              <ul class="col2Links">
-                <li color="white">
-                  <a class="col2LinksLi a" href="./../Index.html">Home</a>
-                </li>
-                <li class="col2LinksLi">
-                  <a class="col2LinksLi a" href="./servicios.html">Servicios</a>
-                </li>
-                <li class="col2LinksLi">
-                  <a class="col2LinksLi a" href="./proyectos.html">Proyectos</a>
-                </li>
-                <li class="col2LinksLi">
-                  <a class="col2LinksLi a" href="./about.html">Sobre mi</a>
-                </li>
-                <li class="col2LinksLi">
-                  <a class="col2LinksLi a" href="./contacto.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section class="column3">
-            <div class="col3">
-              <ul class="col3Links">
-                <li>
-                  <a class="col3LinksLi a" href="#">Proceso de trabajo</a>
-                </li>
-                <li class="col3LinksLi">
-                  <a class="col3LinksLi a" href="#">FAQ</a>
-                </li>
-                <li class="col3LinksLi">
-                  <a class="col3LinksLi a" href="#">Blog</a>
-                </li>
-                <li class="col3LinksLi">
-                  <a class="col3LinksLi a" href="#">Politica de privacidad</a>
-                </li>
-                <li class="col3LinksLi">
-                  <a class="col3LinksLi a" href="#">Terminos y condiciones</a>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section class="column4">
-            <div class="newsletterFooter">
-              Suscribite a nuestro Newsletter y <br />
-              enterate de todas las novedades:
-            </div>
-            <form action="formFooter">
-              <div>
-                <input
-                  class="inputFooter"
-                  class="field"
-                  type="text"
-                  id="mail"
-                  name="mail"
-                  placeholder="ejemplo@gmail.com"
-                />
+          </div>
+          <div class="column-footer col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="column2">
+              <div class="col2">
+                <ul class="col2Links">
+                  <li color="white">
+                    <a class="col2LinksLi a" href="./../Index.html">Home</a>
+                  </li>
+                  <li class="col2LinksLi">
+                    <a class="col2LinksLi a" href="./servicios.html"
+                      >Servicios</a
+                    >
+                  </li>
+                  <li class="col2LinksLi">
+                    <a class="col2LinksLi a" href="./proyectos.html"
+                      >Proyectos</a
+                    >
+                  </li>
+                  <li class="col2LinksLi">
+                    <a class="col2LinksLi a" href="./about.html">Sobre mi</a>
+                  </li>
+                  <li class="col2LinksLi">
+                    <a class="col2LinksLi a" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
               </div>
-              <div>
-                <input
-                  type="submit"
-                  value="¡QUIERO SUSCRIBIRME!"
-                  id="inputSubmit"
-                />
+            </div>
+          </div>
+          <div class="column-footer col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="column3">
+              <div class="col3">
+                <ul class="col3Links">
+                  <li>
+                    <a class="col3LinksLi a" href="#">Proceso de trabajo</a>
+                  </li>
+                  <li class="col3LinksLi">
+                    <a class="col3LinksLi a" href="#">FAQ</a>
+                  </li>
+                  <li class="col3LinksLi">
+                    <a class="col3LinksLi a" href="#">Blog</a>
+                  </li>
+                  <li class="col3LinksLi">
+                    <a class="col3LinksLi a" href="#">Politica de privacidad</a>
+                  </li>
+                  <li class="col3LinksLi">
+                    <a class="col3LinksLi a" href="#">Terminos y condiciones</a>
+                  </li>
+                </ul>
               </div>
-            </form>
-          </section>
-        </section>
-      </section>
+            </div>
+          </div>
+          <div class="column-footer col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="column4">
+              <div class="newsletterFooter">
+                Suscribite a nuestro Newsletter y <br />
+                enterate de todas las novedades:
+              </div>
+              <form action="formFooter">
+                <div>
+                  <input
+                    class="inputFooter"
+                    class="field"
+                    type="text"
+                    id="mail"
+                    name="mail"
+                    placeholder="ejemplo@gmail.com"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="submit"
+                    value="¡QUIERO SUSCRIBIRME!"
+                    id="inputSubmit"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3 copyright-footer">
+        © 2023 Copyright:
+        <a
+          class="text-white"
+          href="https://www.notion.so/uxmaca-portolio/Portfolio-4d5252a0fff34d5d860a48e0411dacc0"
+          >ux.maca</a
+        >
+      </div>
+      <!-- Copyright -->
     </footer>
 
     <script
