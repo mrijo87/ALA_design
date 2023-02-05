@@ -33,19 +33,16 @@ p {
   color: #000000;
 }
 
-button {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: white;
-  border-radius: 1.5625rem;
-}
-
 a {
   color: #000000;
   text-decoration: none;
 }
 
-button {
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: white;
+  border-radius: 1.5625rem;
   background-color: black;
   border: none;
   border-radius: 4px;
@@ -55,7 +52,7 @@ button {
   border-radius: 25px;
 }
 
-button:hover {
+.btn:hover {
   background-color: rgb(203, 123, 75);
 }
 
@@ -190,23 +187,17 @@ footer {
 }
 
 .footer-Container {
-  padding: 6rem 8rem;
+  padding: 6rem 5rem;
 }
 
 .line-footer {
   background-color: white;
   height: 1px;
-  width: 100%;
-  margin: 1rem;
+  margin-top: 2rem;
 }
 
 .logo-Footer {
   height: 43px;
-}
-
-hr {
-  height: 2px;
-  color: white;
 }
 
 .footerContent {
@@ -352,25 +343,25 @@ input {
 }
 
 .section1 {
-  margin: 2.5rem;
+  margin: 2.5rem 2.5rem 0 2.5rem;
   min-height: 25rem;
 }
 
 #parSection1 {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
 }
 
 .ctaSection1 {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .section2 {
-  margin: 2.5rem;
+  margin: 2.5rem 2.5rem 0 2.5rem;
   overflow: hidden;
 }
 
 .contSection2 {
-  padding-top: 4rem;
+  padding-top: 2.5rem;
 }
 
 .section2_image {
@@ -390,10 +381,14 @@ input {
   text-align: center;
 }
 
+#parSection3 {
+  margin-top: 2.5rem;
+}
+
 .section3_image {
   display: flex;
   justify-content: center;
-  margin-top: rem;
+  margin-top: 2.5rem;
 }
 
 .section4 {
@@ -417,7 +412,7 @@ input {
 }
 
 .section5 {
-  padding: 2.5rem;
+  margin: 2.5rem 2.5rem 0 2.5rem;
 }
 
 .contSection5 {
@@ -433,13 +428,18 @@ input {
 }
 
 .parSection5 {
-  margin: 2.5rem;
+  padding-top: 2.5rem;
 }
 
 .section5_image {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
+  padding-bottom: 2.5rem;
+}
+
+.ctaSection5 {
+  margin-top: 1.5rem;
 }
 
 /*********************************************CONTACTO*****************************************************/
@@ -477,27 +477,13 @@ input[type="checkbox"]:checked {
   border-color: black;
 }
 
-.contSection3 {
-  padding: 18rem 4rem 6rem 4rem;
-}
-
-.contSection4 {
-  margin-left: 4rem;
-  justify-content: left;
-}
-
-.section5_image {
-  display: flex;
-  justify-content: right;
-}
-
-.contSection5 {
-  padding: 8rem 2rem;
-}
-
 /* Responsive*/
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
+  .footer-Container {
+    padding: 6rem 8rem;
+  }
+
   .mainContent {
     padding: 2rem;
   }
@@ -517,6 +503,10 @@ input[type="checkbox"]:checked {
 }
 
 @media (min-width: 1200px) {
+  .footer-Container {
+    padding: 6rem 8rem;
+  }
+
   .contSection2 {
     padding: 8rem 4rem 6rem 4rem;
   }
