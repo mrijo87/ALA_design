@@ -451,22 +451,34 @@ footer {
   margin-top: 2rem;
 }
 
+.form-Contact {
+  margin-top: 2rem;
+}
+
 .form-floating {
   margin-top: 2rem;
 }
 
 .form-select {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .form-button {
   margin-top: 4rem;
 }
 
+.form-check {
+  padding-top: 2.5rem;
+}
+
 input[type="checkbox"]:checked {
   box-shadow: none;
   background-color: black;
   border-color: black;
+}
+
+input[type="checkbox"]:checked {
+  box-shadow: none;
 }
 
 /* Responsive*/
@@ -484,7 +496,7 @@ input[type="checkbox"]:checked {
   }
 
   .mainContent-Contact {
-    margin: 4rem 8rem;
+    margin: 4rem 1rem;
   }
 
   .section5_image {
